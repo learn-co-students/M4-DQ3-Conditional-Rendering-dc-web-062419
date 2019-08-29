@@ -53,7 +53,7 @@ class MainBox extends React.Component {
     Replace the code below! Depending on what menu item is selected in the menu, I should render either a Profile, Photos, Cocktails, or Pokemon component.Think of a way to track which menu item was selected. Which component should have state? Which component should have methods to control state? Where should these methods be called?
 
     */
-  const foo = (
+  const detailsToDisplay  = (
     this.state.info === 'profile' ? <Profile /> : // if 
     this.state.info === 'photo' ? <Photos /> : // else if 
     this.state.info === 'cocktail' ? <Cocktails /> : // else if
@@ -61,14 +61,14 @@ class MainBox extends React.Component {
     null // else 
   );
 
-    /* {this.state.info === 'profile' ? <Profile/> : <Photos/>} */
-    const detailsToDisplay = <div>{foo}</div>
+    
+    
     
     
     return (
       <div>
         <MenuBar selection={this.selection}/>
-        {detailsToDisplay}
+        {detailsToDisplay }
       </div>
     )
   }
