@@ -14,7 +14,7 @@ const MenuBar = (props) => {
   */
 
   return (
-    <div className="ui four item menu">
+    <div onClick={(event) => props.selection(event)} className="ui four item menu">
       <a className="item active" id="profile">
         <i className="user large icon" id="profile"/>
       </a>
@@ -23,7 +23,7 @@ const MenuBar = (props) => {
         <i className="photo large icon" id="photo"/>
       </a>
 
-      <a className="item" id="cocktail">
+      <a  className="item" id="cocktail">
         <i className="cocktail large icon" id="cocktail"/>
       </a>
 
