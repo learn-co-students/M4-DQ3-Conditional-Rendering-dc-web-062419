@@ -16,7 +16,6 @@ export const Profile = () => (
   </Card>
 )
 
-
 export const Photos = () => (
   <Card fluid>
     <Card.Content textAlign="center">
@@ -25,7 +24,6 @@ export const Photos = () => (
     </Card.Content>
   </Card>
 )
-
 
 export const Cocktails = () => {
 
